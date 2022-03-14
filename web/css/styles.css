@@ -123,7 +123,7 @@ h6 {
 }
 
 a {
-	color: #555;
+	color: #dd3366e5;
 	text-decoration: underline;
 }
 
@@ -151,9 +151,9 @@ a.white {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #5f4dee;
+	border: 0.125rem solid #dd3366e5;
 	border-radius: 2rem;
-	background-color: #5f4dee;
+	background-color: #dd3366e5;
 	color: #fff;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
@@ -162,16 +162,16 @@ a.white {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #5f4dee;
+	color: #dd3366e5;
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #5f4dee;
+	border: 0.125rem solid #dd3366e5;
 	border-radius: 2rem;
-	background-color: #5f4dee;
+	background-color: #dd3366e5;
 	color: #fff;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
@@ -180,24 +180,24 @@ a.white {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #5f4dee;
+	color: #dd3366e5;
 	text-decoration: none;
 }
 
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #5f4dee;
+	border: 0.125rem solid #dd3366e5;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #5f4dee;
+	color: #dd3366e5;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-reg:hover {
-	background-color: #5f4dee;
+	background-color: #dd3366e5;
 	color: #fff;
 	text-decoration: none;
 }
@@ -205,17 +205,17 @@ a.white {
 .btn-outline-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #5f4dee;
+	border: 0.125rem solid #dd3366e5;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #5f4dee;
+	color: #dd3366e5;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-lg:hover {
-	background-color: #5f4dee;
+	background-color: #dd3366e5;
 	color: #fff;
 	text-decoration: none;
 }
@@ -223,17 +223,17 @@ a.white {
 .btn-outline-sm {
 	display: inline-block;
 	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
-	border: 0.125rem solid #5f4dee;
+	border: 0.125rem solid #dd3366e5;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #5f4dee;
+	color: #dd3366e5;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-sm:hover {
-	background-color: #5f4dee;
+	background-color: #dd3366e5;
 	color: #fff;
 	text-decoration: none;
 }
@@ -381,9 +381,9 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.125rem;
-	border: 1px solid #5f4dee;
+	border: 1px solid #dd3366e5;
 	border-radius: 1.5rem;
-	background-color: #5f4dee;
+	background-color: #dd3366e5;
 	color: #fff;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	cursor: pointer;
@@ -392,7 +392,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button:hover {
 	background-color: transparent;
-	color: #5f4dee;
+	color: #dd3366e5;
 }
 
 /* Form Success And Error Message Formatting */
@@ -1591,7 +1591,7 @@ a:hover.back-to-top {
 
 .ex-2-header h1,
 .ex-2-header p {
-	color: #fff;
+	color: #dd3366e5;
 }
 
 .ex-2-header p {
