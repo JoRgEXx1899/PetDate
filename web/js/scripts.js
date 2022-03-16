@@ -474,25 +474,25 @@
         draggable: false,
         opacity: 0.9,
         icon: Icono
-    }).bindPopup("Veterinaria 1").addTo(map);
+    }).bindPopup("Veterinaria Las Mascotas de Juli").addTo(map);
     const veterinaria2 = L.marker({ lat: 4.6045867, lng: -74.1343866 }, {
         title: "Tarraco",
         draggable: false,
         opacity: 0.9,
         icon: Icono
-    }).bindPopup("Veterinaria 2").addTo(map);
+    }).bindPopup("Veterinaria Recién Pescado").addTo(map);
     const veterinaria3 = L.marker({ lat: 4.6004446, lng: -74.1275589 }, {
         title: "Tarraco",
         draggable: false,
         opacity: 0.9,
         icon: Icono
-    }).bindPopup("Veterinaria 3").addTo(map);
+    }).bindPopup("Centro Veterinario ZOORICATOS").addTo(map);
     const veterinaria4 = L.marker({ lat: 4.6063809, lng: -74.1203329 }, {
         title: "Tarraco",
         draggable: false,
         opacity: 0.9,
         icon: Icono
-    }).bindPopup("Veterinaria 4").addTo(map);
+    }).bindPopup("Dogtor Pet Veterinaria").addTo(map);
 
 
 

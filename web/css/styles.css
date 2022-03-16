@@ -873,6 +873,10 @@ input[type='checkbox'] {
 	border: none;
 }
 
+.card-img-top{
+	max-width: 50px;
+	max-height: 50px;
+}
 .cards-1 .card-image {
 	max-width: 16rem;
 	margin-right: auto;
