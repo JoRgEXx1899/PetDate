@@ -219,7 +219,7 @@
         var json = JSON.stringify(user);
         localStorage.setItem(email, json);
         console.log("usuario añadido");
-
+        window.location.href = "../web/log-in.html";
     }
 
     function sformError() {
@@ -280,7 +280,7 @@
             lformError();
             lsubmitMSG(false, "Por favor agrega un email valido");
         } else if (email == data.email && password == data.password) {
-            window.location.href = "file:///C:/Users/Usuario/Desktop/Grado/PetDate/web/article-details.html";
+            window.location.href = "../web/cerca-tuyo.html";
         } else {
             lsubmitMSG(false, "Contraseña errada");
         }
@@ -302,7 +302,7 @@
         console.log(data);
 
         if (email == data.email && password == data.password) {
-            window.location.href = "C:\Users\Usuario\Desktop\Grado\PetDate\web\article-details.html"
+            window.location.href = "..\cerca-tuyo.html"
         }
     }
 
