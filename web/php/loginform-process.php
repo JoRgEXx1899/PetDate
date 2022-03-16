@@ -2,19 +2,19 @@
 $errorMSG = "";
 
 if (empty($_POST["email"])) {
-    $errorMSG = "Email is required ";
+    $errorMSG = "El correo es requerido ";
 } else {
     $email = $_POST["email"];
 }
 
 if (empty($_POST["password"])) {
-    $errorMSG = "Password is required ";
+    $errorMSG = "La contraseña es requerida ";
 } else {
     $password = $_POST["password"];
 }
 
 $EmailTo = "yourname@domain.com";
-$Subject = "New log in from Tivo landing page";
+$Subject = "New log in from petDate landing page";
 
 // prepare email body text
 $Body = "";
@@ -32,7 +32,7 @@ if ($success && $errorMSG == ""){
    echo "success";
 }else{
     if($errorMSG == ""){
-        echo "Something went wrong :(";
+        echo "Algo fallo:(";
     } else {
         echo $errorMSG;
     }
