@@ -33,6 +33,7 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet.css" />
 
     <!-- Favicon  -->
@@ -82,13 +83,14 @@
 
                     <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" href="gestorVeterinario.html" id="navbarDropdown"
-                            role="button" aria-haspopup="true" aria-expanded="false">MASCOTAS</a>
+                        <a class="nav-link dropdown-toggle page-scroll" href="gestorVeterinario.html"
+                            id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">MASCOTAS</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" id="LocalizacionCheck" href="agregar_mascotas.html"><span
                                     class="item-text">AGREGAR MASCOTAS</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="reserva.html"><span class="item-text">RESERVAR CITA</span></a>
+                            <a class="dropdown-item" href="reserva.html"><span class="item-text">RESERVAR
+                                    CITA</span></a>
                             <div class="dropdown-items-divide-hr"></div>
                         </div>
                     </li>
@@ -117,7 +119,551 @@
         </div> <!-- end of container -->
     </header> <!-- end of ex-header -->
     <!-- end of header -->
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="gestorVeterinario.html">Gestor</a><i
+                            class="fa fa-angle-double-right"></i><span>califica los servicios y productos</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+    <div class="container">
+        <form class="jotform-form" action="" method="post" name="" id="" accept-charset="utf-8" autocomplete="on">
 
+            <div role="main" class="form-all">
+                <ul class="form-section page-section">
+                    <li id="cid_20" class="form-input-wide" data-type="control_head">
+                        <div class="form-header-group  header-default">
+                            <div class="header-text httal htvam">
+                                <h2 id="header_20" class="form-header" style="text-align:center" data-component="header">
+                                    Reseña
+                                </h2>
+                                <div id="subHeader_20" style="text-align:center" class="form-subHeader">
+                                    Por favor califica el servicio
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="form-line jf-required" data-type="control_dropdown" id="id_16">
+                        <label class="form-label form-label-top form-label-auto" id="label_16" for="input_16">
+                            <strong>Veterinaria a la que accedió al servicio</strong>
+                            <span class="form-required">
+                                *
+                            </span>
+                        </label>
+                        <div id="cid_16" class="form-input-wide jf-required">
+                            <select class="form-dropdown validate[required]" id="input_16"
+                                name="q16_ltstronggtveterinariaA" style="width:350px" data-component="dropdown"
+                                required="">
+                                <option value=""> </option>
+                                <option value="Veterinaria Las Mascotas de Juli"> Veterinaria Las Mascotas de Juli
+                                </option>
+                                <option value="Veterinaria Recién Pescado"> Veterinaria Recién Pescado </option>
+                                <option value="Centro Veterinario ZOORICATOS"> Centro Veterinario ZOORICATOS </option>
+                                <option value="Dogtor Pet Veterinaria"> Dogtor Pet Veterinaria </option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="form-line jf-required" data-type="control_textbox" id="id_10">
+                        <label class="form-label form-label-top form-label-auto" id="label_10" for="input_10">
+                            <strong>Nombre del procedimiento</strong>
+                            <span class="form-required">
+                                *
+                            </span>
+                        </label>
+                        <div id="cid_10" class="form-input-wide jf-required">
+                            <input type="text" id="input_10" name="q10_ltstronggtnombreDel" data-type="input-textbox"
+                                class="form-textbox validate[required]" data-defaultvalue="" size="70" value=""
+                                data-component="textbox" aria-labelledby="label_10" required="" />
+                        </div>
+                    </li>
+                    <li class="form-line jf-required" data-type="control_datetime" id="id_18">
+                        <label class="form-label form-label-top form-label-auto" id="label_18" for="lite_mode_18">
+                            Fecha del servicio
+                            <span class="form-required">
+                                *
+                            </span>
+                        </label>
+                        <div id="cid_18" class="form-input-wide jf-required">
+                            <div data-wrapper-react="true">
+                                <div style="display:none">
+                                    <span class="form-sub-label-container" style="vertical-align:top">
+                                        <input type="tel" class="form-textbox validate[required, limitDate]"
+                                            id="month_18" name="q18_fechaDel[month]" size="2" data-maxlength="2"
+                                            data-age="" maxLength="2" value="" required=""
+                                            autoComplete="section-input_18 off"
+                                            aria-labelledby="label_18 sublabel_18_month" />
+                                        <span class="date-separate" aria-hidden="true">
+                                             -
+                                        </span>
+                                        <label class="form-sub-label" for="month_18" id="sublabel_18_month"
+                                            style="min-height:13px" aria-hidden="false"> Mes </label>
+                                    </span>
+                                    <span class="form-sub-label-container" style="vertical-align:top">
+                                        <input type="tel" class="form-textbox validate[required, limitDate]" id="day_18"
+                                            name="q18_fechaDel[day]" size="2" data-maxlength="2" data-age=""
+                                            maxLength="2" value="" required="" autoComplete="section-input_18 off"
+                                            aria-labelledby="label_18 sublabel_18_day" />
+                                        <span class="date-separate" aria-hidden="true">
+                                             -
+                                        </span>
+                                        <label class="form-sub-label" for="day_18" id="sublabel_18_day"
+                                            style="min-height:13px" aria-hidden="false"> Día </label>
+                                    </span>
+                                    <span class="form-sub-label-container" style="vertical-align:top">
+                                        <input type="tel" class="form-textbox validate[required, limitDate]"
+                                            id="year_18" name="q18_fechaDel[year]" size="4" data-maxlength="4"
+                                            data-age="" maxLength="4" value="" required=""
+                                            autoComplete="section-input_18 off"
+                                            aria-labelledby="label_18 sublabel_18_year" />
+                                        <label class="form-sub-label" for="year_18" id="sublabel_18_year"
+                                            style="min-height:13px" aria-hidden="false"> Año </label>
+                                    </span>
+                                </div>
+                                <span class="form-sub-label-container" style="vertical-align:top">
+                                    <input type="text"
+                                        class="form-textbox validate[required, limitDate, validateLiteDate]"
+                                        id="lite_mode_18" size="12" data-maxlength="12" maxLength="12" data-age=""
+                                        value="" required="" data-format="mmddyyyy" data-seperator="-"
+                                        placeholder="mm-dd-yyyy" autoComplete="section-input_18 off"
+                                        aria-labelledby="label_18 sublabel_18_litemode" />
+                                    <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date"
+                                        id="input_18_pick" src="https://cdn.jotfor.ms/images/calendar.png"
+                                        data-component="datetime" aria-hidden="true" data-allow-time="No"
+                                        data-version="v1" />
+                                    <label class="form-sub-label" for="lite_mode_18" id="sublabel_18_litemode"
+                                        style="min-height:13px" aria-hidden="false"> Fecha </label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="form-line jf-required" data-type="control_rating" id="id_15">
+                        <label class="form-label form-label-top form-label-auto" id="label_15" for="input_15">
+                          ¿Qué calificación le daría al servicio?
+                          <span class="form-required">
+                            *
+                          </span>
+                        </label>
+                        <div id="cid_15" class="form-input-wide jf-required">
+                          <div id="input_15" name="q15_queCalificacion" data-component="rating">
+                            <select name="q15_queCalificacion">
+                              <option value="1"> 1 </option>
+                              <option value="2"> 2 </option>
+                              <option value="3"> 3 </option>
+                              <option value="4"> 4 </option>
+                              <option value="5"> 5 </option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                    <li class="form-line jf-required" data-type="control_matrix" id="id_6">
+                        <label class="form-label form-label-top" id="label_6" for="input_6">
+                            <strong>¿Cómo calificarías al servicio?</strong>
+                            <span class="form-required">
+                                *
+                            </span>
+                        </label>
+                        <div id="cid_6" class="form-input-wide jf-required">
+                            <table summary="" aria-labelledby="label_6" cellPadding="4" cellSpacing="0"
+                                class="form-matrix-table" data-component="matrix" >
+                                <tr class="form-matrix-tr form-matrix-header-tr">
+                                    <th class="form-matrix-th" style="border:none">
+                                         
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_0">
+                                        <label id="label_6_col_0"> Muy malo </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_1">
+                                        <label id="label_6_col_1"> Malo </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_2">
+                                        <label id="label_6_col_2"> Regular </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_3">
+                                        <label id="label_6_col_3"> Bueno </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_4">
+                                        <label id="label_6_col_4"> Muy bueno </label>
+                                    </th>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_6 label_6_row_0">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                        <label id="label_6_row_0"> Calidad del servicio </label>
+                                    </th>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_0_0"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[0]" value="Muy malo "
+                                            aria-labelledby="label_6_col_0 label_6_row_0" />
+                                        <label for="input_6_0_0" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_0_1"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[0]" value="Malo"
+                                            aria-labelledby="label_6_col_1 label_6_row_0" />
+                                        <label for="input_6_0_1" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_0_2"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[0]" value="Regular"
+                                            aria-labelledby="label_6_col_2 label_6_row_0" />
+                                        <label for="input_6_0_2" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_0_3"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[0]" value="Bueno"
+                                            aria-labelledby="label_6_col_3 label_6_row_0" />
+                                        <label for="input_6_0_3" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_0_4"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[0]" value="Muy bueno"
+                                            aria-labelledby="label_6_col_4 label_6_row_0" />
+                                        <label for="input_6_0_4" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_6 label_6_row_1">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                        <label id="label_6_row_1"> Facilidad en la reserva </label>
+                                    </th>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_1_0"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[1]" value="Muy malo "
+                                            aria-labelledby="label_6_col_0 label_6_row_1" />
+                                        <label for="input_6_1_0" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_1_1"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[1]" value="Malo"
+                                            aria-labelledby="label_6_col_1 label_6_row_1" />
+                                        <label for="input_6_1_1" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_1_2"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[1]" value="Regular"
+                                            aria-labelledby="label_6_col_2 label_6_row_1" />
+                                        <label for="input_6_1_2" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_1_3"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[1]" value="Bueno"
+                                            aria-labelledby="label_6_col_3 label_6_row_1" />
+                                        <label for="input_6_1_3" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_1_4"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[1]" value="Muy bueno"
+                                            aria-labelledby="label_6_col_4 label_6_row_1" />
+                                        <label for="input_6_1_4" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_6 label_6_row_2">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                        <label id="label_6_row_2"> Ubicación </label>
+                                    </th>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_2_0"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[2]" value="Muy malo "
+                                            aria-labelledby="label_6_col_0 label_6_row_2" />
+                                        <label for="input_6_2_0" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_2_1"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[2]" value="Malo"
+                                            aria-labelledby="label_6_col_1 label_6_row_2" />
+                                        <label for="input_6_2_1" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_2_2"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[2]" value="Regular"
+                                            aria-labelledby="label_6_col_2 label_6_row_2" />
+                                        <label for="input_6_2_2" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_2_3"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[2]" value="Bueno"
+                                            aria-labelledby="label_6_col_3 label_6_row_2" />
+                                        <label for="input_6_2_3" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_2_4"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[2]" value="Muy bueno"
+                                            aria-labelledby="label_6_col_4 label_6_row_2" />
+                                        <label for="input_6_2_4" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_6 label_6_row_3">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                        <label id="label_6_row_3"> Tiempo de espera </label>
+                                    </th>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_3_0"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[3]" value="Muy malo "
+                                            aria-labelledby="label_6_col_0 label_6_row_3" />
+                                        <label for="input_6_3_0" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_3_1"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[3]" value="Malo"
+                                            aria-labelledby="label_6_col_1 label_6_row_3" />
+                                        <label for="input_6_3_1" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_3_2"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[3]" value="Regular"
+                                            aria-labelledby="label_6_col_2 label_6_row_3" />
+                                        <label for="input_6_3_2" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_3_3"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[3]" value="Bueno"
+                                            aria-labelledby="label_6_col_3 label_6_row_3" />
+                                        <label for="input_6_3_3" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_3_4"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[3]" value="Muy bueno"
+                                            aria-labelledby="label_6_col_4 label_6_row_3" />
+                                        <label for="input_6_3_4" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_6 label_6_row_4">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                        <label id="label_6_row_4"> Atención del personal </label>
+                                    </th>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_4_0"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[4]" value="Muy malo "
+                                            aria-labelledby="label_6_col_0 label_6_row_4" />
+                                        <label for="input_6_4_0" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_4_1"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[4]" value="Malo"
+                                            aria-labelledby="label_6_col_1 label_6_row_4" />
+                                        <label for="input_6_4_1" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_4_2"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[4]" value="Regular"
+                                            aria-labelledby="label_6_col_2 label_6_row_4" />
+                                        <label for="input_6_4_2" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_4_3"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[4]" value="Bueno"
+                                            aria-labelledby="label_6_col_3 label_6_row_4" />
+                                        <label for="input_6_4_3" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_4_4"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[4]" value="Muy bueno"
+                                            aria-labelledby="label_6_col_4 label_6_row_4" />
+                                        <label for="input_6_4_4" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_6 label_6_row_5">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                        <label id="label_6_row_5"> Cuidados a tu mascota </label>
+                                    </th>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_5_0"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[5]" value="Muy malo "
+                                            aria-labelledby="label_6_col_0 label_6_row_5" />
+                                        <label for="input_6_5_0" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_5_1"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[5]" value="Malo"
+                                            aria-labelledby="label_6_col_1 label_6_row_5" />
+                                        <label for="input_6_5_1" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_5_2"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[5]" value="Regular"
+                                            aria-labelledby="label_6_col_2 label_6_row_5" />
+                                        <label for="input_6_5_2" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_5_3"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[5]" value="Bueno"
+                                            aria-labelledby="label_6_col_3 label_6_row_5" />
+                                        <label for="input_6_5_3" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                    <td class="form-matrix-values">
+                                        <input type="radio" id="input_6_5_4"
+                                            class="form-radio validate[required, requireEveryRow]"
+                                            name="q6_comoCalificarias6[5]" value="Muy bueno"
+                                            aria-labelledby="label_6_col_4 label_6_row_5" />
+                                        <label for="input_6_5_4" class="matrix-choice-label matrix-radio-label">
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="form-line jf-required" data-type="control_textarea" id="id_11">
+                        <label class="form-label form-label-top form-label-auto" id="label_11" for="input_11">
+                            <strong>Descripción</strong>
+                            <span class="form-required">
+                                *
+                            </span>
+                        </label>
+                        <div id="cid_11" class="form-input-wide jf-required">
+                            <textarea id="input_11" class="form-textarea validate[required]"
+                                name="q11_ltstronggtdescripcionltstronggt" cols="40" rows="6" data-component="textarea"
+                                required="" aria-labelledby="label_11"></textarea>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_button" id="id_17">
+                        <div id="cid_17" class="form-input-wide">
+                            <a class="btn-outline-sm" href="gestorVeterinario.html">Enviar reseña</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Text Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container text-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="images/CEO.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="star_content clearfix" itemprop="reviewRating" itemscope
+                                            itemtype="https://schema.org/Rating">
+                                            <div class="star star_on"></div>
+                                            <div class="star star_on"></div>
+                                            <div class="star star_on"></div>
+                                            <div class="star star_on"></div>
+                                            <div class="star star_on"></div>
+                                            <meta itemprop="worstRating" content="1" />
+                                            <meta itemprop="ratingValue" content="5" />
+                                            <meta itemprop="bestRating" content="5" />
+                                        </div>
+
+                                        <div itemprop="name" class="title_block">Lorem ipsum</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="images/Líder de desarrollo.png" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">Líder de desarrollo con formación en
+                                            disciplinas
+                                            de ciencias de la computación, teoría de
+                                            sistemas, ingeniería de software y las áreas de énfasis de planeación de
+                                            sistemas de información
+                                            y bases de datos. Interesada en el desarrollo innovador en las
+                                            tecnologías y
+                                            aprendizaje continuo,con excelentes relaciones interpersonales,
+                                            compromiso,
+                                            compañerismo, responsabilidad, respeto,
+                                            alto sentido de colaboración e identidad y adaptabilidad al cambio.
+                                        </div>
+                                        <div class="testimonial-author">Ana Garcia - Líder de desarrollo</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of text slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of testimonials -->
 
     <!-- Breadcrumbs -->
     <div class="ex-basic-1">
@@ -125,8 +671,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="gestorVeterinario.html">Gestor><i
-                                class="fa fa-angle-double-right"></i><span>califica los servicios y productos</span>
+                        <a href="gestorVeterinario.html">Gestor</a><i
+                            class="fa fa-angle-double-right"></i><span>califica los servicios y productos</span>
                     </div> <!-- end of breadcrumbs -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -134,17 +680,18 @@
     </div> <!-- end of ex-basic-1 -->
     <!-- end of breadcrumbs -->
 
-<!-- Scripts -->
-<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-<script type="text/javascript" src="maps/mapM.geojson"></script>
-<script src="js/leaflet.js"></script>
-<script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script type="text/javascript" src="maps/mapM.geojson"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 
 </body>
+
 </html>

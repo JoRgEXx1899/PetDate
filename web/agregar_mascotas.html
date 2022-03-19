@@ -82,13 +82,14 @@
 
                     <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" href="gestorVeterinario.html" id="navbarDropdown"
-                            role="button" aria-haspopup="true" aria-expanded="false">MASCOTAS</a>
+                        <a class="nav-link dropdown-toggle page-scroll" href="gestorVeterinario.html"
+                            id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">MASCOTAS</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" id="LocalizacionCheck" href="agregar_mascotas.html"><span
                                     class="item-text">AGREGAR MASCOTAS</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="reserva.html"><span class="item-text">RESERVAR CITA</span></a>
+                            <a class="dropdown-item" href="reserva.html"><span class="item-text">RESERVAR
+                                    CITA</span></a>
                             <div class="dropdown-items-divide-hr"></div>
                         </div>
                     </li>
@@ -118,15 +119,15 @@
     </header> <!-- end of ex-header -->
     <!-- end of header -->
 
-
     <!-- Breadcrumbs -->
     <div class="ex-basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="gestorVeterinario.html">Gestor><i
-                                class="fa fa-angle-double-right"></i><span>Añadir tus mascotas</span>
+                        <a href="gestorVeterinario.html">Gestor</a><i class="fa fa-angle-double-right"></i><span>Añadir
+                            tus
+                            mascotas</span>
                     </div> <!-- end of breadcrumbs -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -134,17 +135,120 @@
     </div> <!-- end of ex-basic-1 -->
     <!-- end of breadcrumbs -->
 
-<!-- Scripts -->
-<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-<script type="text/javascript" src="maps/mapM.geojson"></script>
-<script src="js/leaflet.js"></script>
-<script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Agrgar Form -->
+                <div class="form-container">
+                    <br>
+                    <h3>Llena el formulario para añadir a tu mascota</h3>
+                    <br>
+                    <form id="AgregarForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="Anombre" required>
+                            <label class="label-control" for="Anombre">Nombre</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="Atipo">
+                                <option value=0>Perro</option>
+                                <option value=1>Gato</option>
+                                <option value=2>Pez</option>
+                                <option value=3>Hamster</option>
+                                <option value=4>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="Araza" required>
+                            <label class="label-control" for="Araza">Raza</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control-input" id="Aedad" min="0" max="30" required>
+                            <label class="label-control" for="Aedad">Edad</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <p>Presenta alguna enfermedad:</p>
+                            <br />
+                            <input name="Arespiratoria" type="checkbox" />Respiratoria
+                            <br />
+                            <input name="Aalimenticia" type="checkbox" />alimentacia
+                            <br />
+                            <input name="Acardiacas" type="checkbox" />Cardiaca
 
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <textarea name="Adescripcion" rows="10" cols="40">Descripción</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <textarea name="Apersonalidad" rows="10" cols="40">Personalidad</textarea>
+                            </div>
+                        </div>
+                        <div class="form-file">
+                            <div class="form-file__action">
+                                <label for="image" class="title">Imagen de tu mascota</label>
+    
+                                <input type="file" name="image" id="image" />
+                            </div>
+                            <div class="form-file__result" id="result-image">
+                                <img id="img-result" alt="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a class="btn-outline-sm" href="gestorVeterinario.html">Enviar</a>
+                            <!--<a class="btn-outline-sm" href="article-details.html">INICIAR SESIÓN</a>-->
+                        </div>
+                        <div class="form-message">
+                            <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                </div> <!-- end of form container -->
+                <!-- end of sign up form -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="gestorVeterinario.html">Gestor</a><i class="fa fa-angle-double-right"></i><span>Añadir
+                            tus mascotas</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2022 <a href="https://inovatik.com">PetDate</a></p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/imagen.js"></script>
 </body>
+
 </html>
