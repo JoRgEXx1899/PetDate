@@ -197,6 +197,7 @@
         var json = JSON.stringify(user);
         localStorage.setItem(email, json);
         console.log("usuario añadido");
+        window.location.href = "../web/log-in.html";
     }
 
     /*function sformSuccess() {
@@ -280,7 +281,7 @@
             lformError();
             lsubmitMSG(false, "Por favor agrega un email valido");
         } else if (email == data.email && password == data.password) {
-            window.location.href = "../web/cerca-tuyo.html";
+            window.location.href = "../web/agregar_mascotas.html";
         } else {
             lsubmitMSG(false, "Contraseña errada");
         }
